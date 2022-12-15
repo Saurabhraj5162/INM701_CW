@@ -34,9 +34,10 @@ Source : https://archive.ics.uci.edu/ml/datasets/Taiwanese+Bankruptcy+Prediction
 
 
 ## My Approach:
-I have prepared the data in two ways:
+I have prepared the data in three ways:
 1. Oversampled (SMOTE)
 2. Undersampled (Bring down the count of majority class data)
+3. Resampled (created multiple datasets containing all samples of minority class).
 
 Then I have applied different machine learning models and Neural Networks 
 from sklearn and tensorflow respectively.
@@ -50,6 +51,9 @@ Training2 : It contains the undersampling code of data followed by different
             and training on undersampled and oversampled data.
             Then CNN traiing on undersampled data concluded by a tabular 
             comparision.
+Training3: It contains the resampling code. Here the datasets is resampled into 
+            multiple balanced datasets and an ensemble model of decision trees
+            is trained.
             
 Saved_Models directory contains the saved weights of best model (Random Forest
 in this case).
